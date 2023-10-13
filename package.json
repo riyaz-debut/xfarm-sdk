@@ -1,0 +1,27 @@
+{
+  "name": "methodbridge-sdk",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "nodemon": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "express": "~4.16.1",
+    "express-validator": "^6.14.2",
+    "fabric-ca-client": "^2.2.13",
+    "fabric-client": "^1.4.20",
+    "fabric-network": "^2.2.13",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mongoose": "^6.4.4",
+    "morgan": "~1.9.1",
+    "swig-security-fix": "^2.0.0"
+  }
+}

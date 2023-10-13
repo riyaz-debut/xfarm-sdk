@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  xfarm-sdk:
+    container_name: xfarm-sdk
+    image: node:16.16.0
+    restart: always
+    environment:
+      - CHANNEL_NAME=xfarm-channel
+      - CHAINCODE_NAME=xfarm-cc
+      - USER_NAME=user2
+      - CA_URL=ca.org1.xfarm.com
+      - ORG_MSPID=org1MSP
+      - CA_ADMIN_USERNAME=admin
+      - CA_ADMIN_PASSWORD=adminpw 
+      - AUTH_USER=xfarmuser
+      - AUTH_PW=xfarmpw
+    volumes: 
+      - ./:/xfarm-sdk
+    command: sh -c "cd /xfarm-sdk/ && npm install && npm start"  
+    ports:
+      - 3000:3000
